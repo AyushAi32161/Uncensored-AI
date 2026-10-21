@@ -30,7 +30,7 @@ jobs:
           unzip -q /tmp/gradle.zip -d /tmp
           echo "/tmp/gradle-8.9/bin" >> "$GITHUB_PATH"
 
-      - name: Build APK
+      - name: Build debug APK
         run: gradle --no-daemon assembleDebug
 
       - name: Upload APK
